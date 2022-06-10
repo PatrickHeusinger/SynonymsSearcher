@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+}
+
+.mainDiv {
+    background-image: url(img/synonyme.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.resultDiv {
+    display: flex;
+    justify-content: flex-start;
+    margin: 50px;
+}
+
+.btn {
+    margin-left: 20px;
+}
+
+#search {
+    width: 200px;
+    height: 38px;
+    border-radius: 5px;
+    border: none;
+    padding-left: 12px;
+}
+
+.container {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 50px;
+    margin: 50px 50px;
+    border: 1px solid gray;
+}
+
+.noResult {
+    text-align: center;
+}
+
+.term {
+    margin-top: 10px;
+}
+
+.head {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.offcanvas {
+    width: 200px !important;
+}
+
+.footer {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 150px;
+    background-color: aliceblue;
+}
+
+.footerText {
+    margin-top: 80px;
+    padding: 20px;
+}
+
+a {
+    text-decoration: none !important;
+    color: black !important;
+}
+
+a:hover {
+    opacity: 50%;
+}
+
+@media (max-width:500px) {
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        height: 200px;
+    }
+    .footerText {
+        margin-top: 20px;
+    }
+    .mainDiv {
+        flex-direction: column;
+    }
+    .btn {
+        margin-top: 50px;
+    }
+}
